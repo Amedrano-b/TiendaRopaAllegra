@@ -69,6 +69,29 @@
     opacity: 1;
 }
 
+.container-icon {
+    position: relative;
+}
+.icon-cart {
+    width: 40px;
+    height: 40px;
+
+}
+.icon-cart:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.icon-user {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-user:hover {
+    cursor: pointer;
+    color: gray;
+}
+
 .header__btn {
     display: none;
     flex-direction: column;

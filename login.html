@@ -5,35 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Allegra</title>
-    <link rel="stylesheet" href="asset/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/stylesLogin.css" />
 </head>
 
 <body>
-    <section id="login">
-        <div class="login-container">
-            <h1 class="logo"> Allegra</h1>
-            <h2 class="login-title">Log In</h2>
-            <form id="loginForm">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Ex: Allegra@gmail.com" required />
-
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="***********" required />
-
-                <div class="login-options">
-                    <label><input type="checkbox" /> Remember me</label>
-                    <a href="#">Forgot password?</a>
+    <div class="container">
+        <div class="login__content">
+            <img src="asset/images/ben-scott-bCnM5P0gcpY-unsplash.jpg" alt="login image" class="login__img">
+            <form action="" class="login__form">
+                <div>
+                    <h1 class="login__title">
+                        <span>Welcome</span> Back
+                    </h1>
+                    <p class="login__description">
+                        Welcome! Please login to continue.
+                    </p>
                 </div>
+                <div>
+                    <div class="login__inputs">
+                        <div>
+                            <label for="" class="login__label">Email</label>
+                            <input type="email" placeholder="Enter your email address" required class="login__input">
+                        </div>
+                        <div>
+                            <label for="" class="login__label">Password</label>
 
-                <div class="button-group">
-                    <form action=""><button>Log in</button></form>
+                            <div class="login__box">
+                                <input type="password" placeholder="Enter your password" required class="login__input"
+                                    id="input-pass">
+                                <i class="ri-eye-off-line login__eye" id="input-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="login__check">
+                        <input type="checkbox" class="login__check-input">
+                        <label for="" class="login__check-label">Remember me</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="login__buttons">
+                        <button class="login__button">Log In</button>
+                        <button action="signup.html" class="login__button login__button-ghost">Sign Up</button>
+                    </div>
+
+                    <a href="#" class="login__forgot">Forgot Password?</a>
                 </div>
             </form>
-            <p>If you don’t have an account ...</p>
-            <form action="signup.html"><button>Create an account</button></form>
         </div>
-    </section>
-    <script src="asset/index.js"></script>
+    </div>
+    <script src="asset/js/scriptLogin.js"></script>
 </body>
 
 </html>
