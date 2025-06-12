@@ -71,9 +71,8 @@ header .container-icon {
 .count-products {
     position: absolute;
     top: 55%;
-    right: 0;
     background-color: #000;
-    color: #fff;
+    color: #fff;  
     width: 25px;
     height: 25px;
     display: flex;
