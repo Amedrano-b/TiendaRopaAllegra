@@ -1,21 +1,21 @@
-const showHiddenPass =(inputPass, inputIcon) =>{
-    const input = document.getElementById(inputPass),
-    iconEye = document.getElementById(inputIcon)
+const wrapper = document.querySelector(".wrapper");
+const loginLink= document.querySelector(".login-link");
+const registerLink= document.querySelector(".register-link");
+const btnPopup= document.querySelector(".btnLogin-popup");
+const iconClose= document.querySelector(".icon-close");
 
-    iconEye.addEventListener("click", () =>{
-        if(input.type === "password"){
-            input.type = "text"
+registerLink.addEventListener("click", ()=>{
+    wrapper.classList.add("active");
+})
 
-            iconEye.classList.add("ri-eye-line")
+loginLink.addEventListener("click", ()=>{
+    wrapper.classList.remove("active");
+})
 
-            iconEye.classList.remove("ri-eye-off-line")
-        }else{
-            input.type = "password"
+btnPopup.addEventListener("click", ()=>{
+    wrapper.classList.add("active-popup");
+})
 
-            iconEye.classList.remove("ri-eye-line")
-            iconEye.classList.add("ri-eye-off-line")
-        }
-    })
-}
-
-showHiddenPass("input-pass","input-icon")
+iconClose.addEventListener("click", ()=>{
+    wrapper.classList.remove("active-popup");
+})

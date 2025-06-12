@@ -4,58 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Allegra</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Allegra</title>
     <link rel="stylesheet" href="asset/css/stylesLogin.css" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="login__content">
-            <img src="asset/images/ben-scott-bCnM5P0gcpY-unsplash.jpg" alt="login image" class="login__img">
-            <form action="" class="login__form">
-                <div>
-                    <h1 class="login__title">
-                        <span>Welcome</span> Back
-                    </h1>
-                    <p class="login__description">
-                        Welcome! Please login to continue.
-                    </p>
+    <header>
+        <h2 class="logo">Allegra</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
                 </div>
-                <div>
-                    <div class="login__inputs">
-                        <div>
-                            <label for="" class="login__label">Email</label>
-                            <input type="email" placeholder="Enter your email address" required class="login__input">
-                        </div>
-                        <div>
-                            <label for="" class="login__label">Password</label>
-
-                            <div class="login__box">
-                                <input type="password" placeholder="Enter your password" required class="login__input"
-                                    id="input-pass">
-                                <i class="ri-eye-off-line login__eye" id="input-icon"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="login__check">
-                        <input type="checkbox" class="login__check-input">
-                        <label for="" class="login__check-label">Remember me</label>
-                    </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
                 </div>
-                <div>
-                    <div class="login__buttons">
-                        <button class="login__button">Log In</button>
-                        <button action="signup.html" class="login__button login__button-ghost">Sign Up</button>
-                    </div>
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
 
-                    <a href="#" class="login__forgot">Forgot Password?</a>
+        <div class="form-box register">
+            <h2>Sign up</h2>
+            <form action="">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox">I agree to the terms & conditions</label>
+                    
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
                 </div>
             </form>
         </div>
     </div>
-    <script src="asset/js/scriptLogin.js"></script>
+
+    <script src="/asset/js/scriptLogin.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
