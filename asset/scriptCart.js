@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", updateCart)
+document.addEventListener('DOMContentLoaded', () => {
+    updateCart();
+});
 
 function updateCart() {
   let subtotal = 0;
@@ -14,18 +16,30 @@ function updateCart() {
 
   document.getElementById("subtotal").textContent = subtotal.toFixed(2);
 
-  let shipping = 5.00;
+  let shipping = 5.0;
   if (subtotal === 0) {
-    shipping = 0.00;
+    shipping = 0.0;
   }
   document.getElementById("shipping").textContent = shipping.toFixed(2);
 
   const total = subtotal + shipping;
   document.getElementById("total").textContent = total.toFixed(2);
+  updateProductCount();
 }
 
 function removeItem(button) {
   const itemToRemove = button.closest(".cart-item");
   itemToRemove.remove();
   updateCart();
+}
+
+function updateProductCount() {
+  const quantityInputs = document.querySelectorAll(
+    '.cart-item input[type="number"]'
+  );
+  let totalCount = 0;
+  quantityInputs.forEach((input) => {
+    totalCount += parseInt(input.value, 10);
+  });
+  document.getElementById("contador-productos").textContent = totalCount;
 }
