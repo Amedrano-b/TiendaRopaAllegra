@@ -1,0 +1,110 @@
+<!DOCTYPE html>Add commentMore actions
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Allegra</title>
+    <link rel="stylesheet" href="asset/styles.css">
+    <link rel="stylesheet" href="asset/stylesCart.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Allegra</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#product-grid">Ver todo</a></li>
+                    <li><a href="men.html">Hombres</a></li>
+                    <li><a href="woman.html">Mujeres</a></li>
+                    <li><a href="#">Casual</a></li>
+                    <li><a href="#">Elegante</a></li>
+                </ul>
+            </nav>
+            <div class="container-icon">
+                <a href="cart.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                </svg>
+                </a>
+                <a href="login.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="icon-user">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                    </svg>
+                </a>
+                <div class="count-products">
+                    <span id="contador-productos"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-container">
+            <h2>Carrito de Compras</h2>
+
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="asset/images/tide_trasher_x-EAp7LSPhg6c-unsplash.jpg" alt="Camiseta">
+                    <div class="item-details">
+                        <h3>Camiseta</h3>
+                        <p>Talla: M</p>
+                        <p>Color: Blanco</p>
+                        <p>Precio: $<span class="item-price">19.99</span></p>
+                        <div class="item-quantity">
+                            <label for="qty-1">Cantidad:</label>
+                            <input type="number" id="qty-1" value="1" min="1" onchange="updateCart()">
+                        </div>
+                        <button class="remove-item" onclick="removeItem(this)">Eliminar</button>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="asset/images/ryanwar-hanif-sgvT6QGJhfY-unsplash.jpg" alt="Jeans">
+                    <div class="item-details">
+                        <h3>Jeans</h3>
+                        <p>Talla: 32</p>
+                        <p>Color: Negro</p>
+                        <p>Precio: $<span class="item-price">49.99</span></p>
+                        <div class="item-quantity">
+                            <label for="qty-2">Cantidad:</label>
+                            <input type="number" id="qty-2" value="1" min="1" onchange="updateCart()">
+                        </div>
+                        <button class="remove-item" onclick="removeItem(this)">Eliminar</button>
+                    </div>
+                </div>
+
+                </div>
+
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    $<span id="subtotal">0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Envío:</span>
+                    $<span id="shipping">5.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    $<span id="total">0.00</span>
+                </div>
+                <button class="checkout-button">Proceder al Pago</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; Allegra 2025</p>
+        </div>
+    </footer>
+
+    <script src="asset/scriptCart.js"></script>
+</body>
+</html>
