@@ -8,7 +8,8 @@
         "image": "asset/images/sirio-7_ZNLVlJchs-unsplash.jpg",
         "isNew": true,
         "isTrending": false,
-        "category": "men"
+        "category": "men",
+        "link": "/productDress.html"
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
         "image": "asset/images/prince-akachi-7j9jNQxXUCU-unsplash.jpg",
         "isNew": true,
         "isTrending": false,
-        "category": "men"
+        "category": "men",
+        "link": "/productDress.html"
     },
     {
         "id": 3,
@@ -30,7 +32,8 @@
         "image": "asset/images/yichen-wang-L6-A8ZNoPEU-unsplash.jpg",
         "isNew": true,
         "isTrending": false,
-        "category": "men"
+        "category": "men",
+        "link": "/productDress.html"
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
         "image": "asset/images/prince-akachi-iuqcmC4NVNo-unsplash.jpg",
         "isNew": true,
         "isTrending": false,
-        "category": "men"
+        "category": "men",
+        "link": "/productDress.html"
     },
     {
         "id": 5,
@@ -52,7 +56,8 @@
         "image": "asset/images/sirio-HRe9IRwGKBY-unsplash.jpg",
         "isNew": false,
         "isTrending": false,
-        "category": "men"
+        "category": "men",
+        "link": "/productDress.html"
     },
     {
         "id": 6,
@@ -63,7 +68,8 @@
         "image": "asset/images/tide_trasher_x-EAp7LSPhg6c-unsplash.jpg",
         "isNew": true,
         "isTrending": false,
-        "category": "men"
+        "category": "men",
+        "link": "/productDress.html"
     },
     {
         "id": 7,
@@ -74,7 +80,8 @@
         "image": "asset/images/philipp-arlt-NmH9A0obon8-unsplash.jpg",
         "isNew": false,
         "isTrending": false,
-        "category": "women"
+        "category": "women",
+        "link": "/productDress.html"
     },
     {
         "id": 8,
@@ -85,7 +92,8 @@
         "image": "asset/images/naeim-jafari--VNyN-lZ1pE-unsplash.jpg",
         "isNew": true,
         "isTrending": false,
-        "category": "women"
+        "category": "women",
+        "link": "/productDress.html"
     },
     {
         "id": 9,
@@ -96,7 +104,8 @@
         "image": "asset/images/ryanwar-hanif-sgvT6QGJhfY-unsplash.jpg",
         "isNew": false,
         "isTrending": true,
-        "category": "women"
+        "category": "women",
+        "link": "/productDress.html"
     },
     {
         "id": 10,
@@ -107,7 +116,8 @@
         "image": "asset/images/khaled-ghareeb--NyPn9up_7o-unsplash.jpg", 
         "isNew": false,
         "isTrending": true,
-        "category": "women"
+        "category": "women",
+        "link": "/productDress.html"
     },
     {
         "id": 11,
@@ -118,7 +128,8 @@
         "image": "asset/images/leah-hetteberg-YAaOtaGW7KQ-unsplash.jpg",
         "isNew": false,
         "isTrending": false,
-        "category": "men"
+        "category": "men",
+        "link": "/productDress.html"
     },
     {
         "id": 12,
@@ -130,11 +141,12 @@
         "image2": "asset/images/elise-wilcox-VXvVjvHSGSU-unsplash.jpg",
         "isNew": true,
         "isTrending": true,
-        "category": "women"
+        "category": "women",
+        "link": "/productDress.html"
     },
     {
         "id": 13,
-        "title": "women yellow dress",
+        "title": "women yell'ow dress",
         "trendTitle": "Lorem ipsum dolor",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ratione sint, minima itaque maxime facilis necessitatibus aliquam veritatis, possimus sapiente esse aspernatur atque harum laboriosam consequatur quam pariatur, doloremque expedita.",
         "price": 1499.99,
@@ -142,7 +154,8 @@
         "image2": "asset/images/engin-akyurt-V3ooWSqPPvc-unsplash.jpg",
         "isNew": true,
         "isTrending": false,
-        "category": "women"
+        "category": "women",
+        "link": "/productDress.html"
     },
     {
         "id": 14,
@@ -154,6 +167,8 @@
         "image2": "asset/images/lera-kogan-XnveTxd5Y-4-unsplash.jpg",
         "isNew": true,
         "isTrending": false,
-        "category": "women"
+        "category": "women",
+        "link": "/productDress.html"
+        
     }
 ]

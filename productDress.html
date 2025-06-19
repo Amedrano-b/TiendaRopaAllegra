@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="asset/styles.css" />
+    <link rel="stylesheet" href="asset/css/productDetails.css" />
+    <title>Product Details</title>
+</head>
+
+<body>
+    <!-- ============= Header ============= -->
+    <header class="header">
+        <nav class="header__container container">
+            <div class="header__logo">
+                <h1><a href="./">Allegra</a></h1>
+            </div>
+            <ul class="header__links">
+                <li class="header__link">
+                    <a href="index.html">home</a>
+                </li>
+                <li class="header__link">
+                    <a href="#index.html">new</a>
+                </li>
+                <li class="header__link">
+                    <a href="index.html">shop</a>
+                </li>
+                <li class="header__link">
+                    <a href="index.html">trending</a>
+                </li>
+            </ul>
+            <div class="container-icon">
+                <a href="cart.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="icon-cart">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+                </a>
+                <a href="login.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="icon-user">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                    </svg>
+                </a>
+
+            </div>
+
+            <div class="header__btn">
+                <span style="--i: 0"></span>
+                <span style="--i: 10"></span>
+                <span style="--i: 20"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============= Product details ============= -->
+
+    <section id="container-product">
+        <div class="product-details">
+            <div class="gallery">
+                <img src="asset/images/elise-wilcox-J1K3axuq22k-unsplash.jpg" id="productImg">
+                <div class="controls">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+            </div>
+            <div class="details-p">
+                <h1>Black Dress</h1>
+                <h2>$969.00</h2>
+                <h3>20% OFF</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nobis suscipit voluptatibus atque iure
+                    iusto ullam corporis sequi veritatis magnam dolores pariatur mollitia libero, a quaerat dolorem
+                    aspernatur amet eum.
+                </p>
+                <form>
+                    <div class="size-select">
+                        <p>Size</p>
+                        <label for="x-small">
+                            <input type="radio" name="size" id="x-small">
+                            <span>XS</span>
+                        </label>
+                        <label for="small">
+                            <input type="radio" name="size" id="small">
+                            <span>S</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="size" id="medium">
+                            <span>M</span>
+                        </label>
+                        <label for="large">
+                            <input type="radio" name="size" id="large">
+                            <span>L</span>
+                        </label>
+                        <label for="x-large">
+                            <input type="radio" name="size" id="x-large">
+                            <span>XL</span>
+                        </label>
+                    </div>
+                    <div class="color-select">
+                        <p>Color</p>
+                        <label for="black">
+                            <input type="radio" name="color" id="black">
+                            <span class="color-1"></span>
+                        </label>
+                        <label for="olive">
+                            <input type="radio" name="color" id="olive">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="purple">
+                            <input type="radio" name="color" id="purple">
+                            <span class="color-3"></span>
+                        </label>
+                        <label for="pink">
+                            <input type="radio" name="color" id="pink">
+                            <span class="color-4"></span>
+                        </label>
+                    </div>
+                    <div class="quantity-select">
+                        <p>Quantity</p>
+                        <input type="number" value="1" id="combobox">
+                    </div>
+                    <button>Buy Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= Footer ============= -->
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <h1>
+                        <a href="./">Allegra</a>
+                    </h1>
+                </div>
+                <div class="footer__description">
+                    <p>The very best of the best</p>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__title">
+                    <h3>company</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link"><a href="#home">Home</a></li>
+                        <li class="footer__link"><a href="#new">New</a></li>
+                        <li class="footer__link"><a href="#shop">Shop</a></li>
+                        <li class="footer__link"><a href="#trending">Trending</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__title">
+                    <h3>information</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link">
+                            <a href="#">
+                                <span class="material-symbols-rounded"> location_on </span>
+                                <p>Estelí, Nicaragua.</p>
+                            </a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="#">
+                                <span class="material-symbols-rounded"> schedule </span>
+                                <p>
+                                    Saturday - Thursday <br />
+                                    9AM - 12PM
+                                </p>
+                            </a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="tel:+12334567775">
+                                <span class="material-symbols-rounded"> call </span>
+                                <p>+505 7650-1289</p>
+                            </a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="allegra@gmail.com">
+                                <span class="material-symbols-rounded"> mail </span>
+                                <p>allegra@gmail.com</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__title">
+                    <h3>social media</h3>
+                </div>
+                <ul class="footer__links">
+                    <li class="footer__link"><a href="">Instagram</a></li>
+                    <li class="footer__link"><a href="">Facebook</a></li>
+                    <li class="footer__link"><a href="">Whatsapp</a></li>
+                    <li class="footer__link"><a href="">X</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyRight">
+            <p>&copy; 2025 <span>Allegra</span> All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        let productImg = document.getElementById("productImg");
+        let btn = document.getElementsByClassName("btn");
+        btn[0].onclick = function () {
+            productImg.src = "asset/images/elise-wilcox-J1K3axuq22k-unsplash.jpg"
+
+            for (bt of btn) {
+                bt.classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[1].onclick = function () {
+            productImg.src = "asset/images/elise-wilcox-AJfo8UJV2vI-unsplash.jpg"
+
+            for (bt of btn) {
+                bt.classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[2].onclick = function () {
+            productImg.src = "/asset/images/elise-wilcox-h-pp5V93MpU-unsplash.jpg"
+            for (bt of btn) {
+                bt.classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+
+        document.getElementById("combobox").addEventListener('change', function () {
+            let selectedValue = parseInt(this.value);
+            if (selectedValue < 1) {
+                this.value = '1';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

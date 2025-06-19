@@ -11,7 +11,7 @@ const navBar = document.querySelector(".header"),
     circleBtn = document.querySelector(".go-down-btn"),
     scrollUpBtn = document.querySelector(".scroll-up");
 
-const API_URL = "asset/apis/products.json"; 
+const API_URL = "asset/apis/products.json";
 
 // initialize Scroll Reveal
 const sr = ScrollReveal({ origin: "top", distance: "100px", duration: 2000, delay: 300 });
@@ -134,6 +134,12 @@ async function renderShopProducts() {
         });
         product.addEventListener("mouseleave", () => {
             image.src = product.dataset.image1;
+        });
+        product.addEventListener("click", () => {
+
+
+            window.location.href = product.dataset.link;
+
         });
     });
 
