@@ -136,9 +136,9 @@ async function renderShopProducts() {
             image.src = product.dataset.image1;
         });
         product.addEventListener("click", () => {
-
-
+    
             window.location.href = product.dataset.link;
+
 
         });
     });

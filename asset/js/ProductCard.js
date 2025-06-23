@@ -1,7 +1,7 @@
-function ProductCard({ id, title, price, image, image2, category, link }) {
+function ProductCard({ id, title, price, image, image2, image3, category, link }) {
     return `<div class="swiper-slide product-card" data-id="${id}" data-category="${category}" data-image1="${image}" data-image2="${image2}" >
                 <div class="product-card__image">
-                    <a href="${link}"><img src="${image}" alt="${title}" /></a>
+                    <a href="${link}?id=${id}"><img src="${image}" alt="${title}" /></a>
                 </div>
                 <div class="product-card__description">
                     <div class="row">

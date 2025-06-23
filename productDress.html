@@ -63,21 +63,14 @@
     <section id="container-product">
         <div class="product-details">
             <div class="gallery">
-                <img src="asset/images/elise-wilcox-J1K3axuq22k-unsplash.jpg" id="productImg">
-                <div class="controls">
-                    <span class="btn active"></span>
-                    <span class="btn"></span>
-                    <span class="btn"></span>
-                </div>
+
             </div>
             <div class="details-p">
-                <h1>Black Dress</h1>
-                <h2>$969.00</h2>
-                <h3>20% OFF</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nobis suscipit voluptatibus atque iure
-                    iusto ullam corporis sequi veritatis magnam dolores pariatur mollitia libero, a quaerat dolorem
-                    aspernatur amet eum.
-                </p>
+
+                <div class="details-products">
+                    <!-- Los detalles del productos se cargarán dinámicamente desde la API -->
+                </div>
+
                 <form>
                     <div class="size-select">
                         <p>Size</p>
@@ -208,31 +201,12 @@
     </footer>
 
     <script>
-        let productImg = document.getElementById("productImg");
-        let btn = document.getElementsByClassName("btn");
-        btn[0].onclick = function () {
-            productImg.src = "asset/images/elise-wilcox-J1K3axuq22k-unsplash.jpg"
+        const detailsContainer = document.querySelector('.details-products');
+        const galleryImg = document.querySelector('.gallery')
+        const API_URL = "asset/apis/products.json";
 
-            for (bt of btn) {
-                bt.classList.remove("active");
-            }
-            this.classList.add("active");
-        }
-        btn[1].onclick = function () {
-            productImg.src = "asset/images/elise-wilcox-AJfo8UJV2vI-unsplash.jpg"
 
-            for (bt of btn) {
-                bt.classList.remove("active");
-            }
-            this.classList.add("active");
-        }
-        btn[2].onclick = function () {
-            productImg.src = "/asset/images/elise-wilcox-h-pp5V93MpU-unsplash.jpg"
-            for (bt of btn) {
-                bt.classList.remove("active");
-            }
-            this.classList.add("active");
-        }
+
 
         document.getElementById("combobox").addEventListener('change', function () {
             let selectedValue = parseInt(this.value);
@@ -240,6 +214,69 @@
                 this.value = '1';
             }
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadDetailsFromAPI();
+        });
+
+
+        function getProductId() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id');
+        }
+
+        async function loadDetailsFromAPI() {
+            const response = await fetch(API_URL);
+            const products = await response.json();
+
+            const productId = parseInt(getProductId());
+            const product = products.find(p => p.id === productId);
+
+            if (!product) {
+                detailsContainer.innerHTML = "<p>Producto no encontrado</p>";
+                return;
+            }
+
+            galleryImg.innerHTML = ` <img src="${product.image}" id="productImg">
+            <div class="controls">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>`;
+            let productImg = document.getElementById("productImg");
+            let btn = document.getElementsByClassName("btn");
+
+            detailsContainer.innerHTML = `
+                <h1>${product.title}</h1>
+                <h2>$ ${product.price}</h2>
+                <h3>20% OFF</h3>
+                <p>${product.description}</p>`;
+
+
+            btn[0].onclick = function () {
+                productImg.src = product.image;
+
+                for (bt of btn) {
+                    bt.classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+            btn[1].onclick = function () {
+                productImg.src = product.image2;
+
+                for (bt of btn) {
+                    bt.classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+            btn[2].onclick = function () {
+                productImg.src = product.image3;
+                for (bt of btn) {
+                    bt.classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+        }
     </script>
 
 </body>

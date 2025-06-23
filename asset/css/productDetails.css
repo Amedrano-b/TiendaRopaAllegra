@@ -54,18 +54,18 @@
     font-size: 35px;
 }
 
-.details h2{
+.details-p h2{
     color: #555;
     font-size: 30px;
     font-weight: 600;
 }
 
-.details h3{
-    color: yellow;
-    margin-bottom: 20px;
+.details-p h3{
+    color: purple;
+    margin-bottom: 10px;
 }
 
-.details form{
+.details-p form{
     font-size: 15px;
     font-weight: 400;
 }
@@ -185,6 +185,7 @@ form button{
     background: rgba(255, 255, 255, 0.5);
     margin: 10px;
     cursor: pointer;
+
 }
 
 .btn.active{

@@ -19,3 +19,21 @@ btnPopup.addEventListener("click", ()=>{
 iconClose.addEventListener("click", ()=>{
     wrapper.classList.remove("active-popup");
 })
+
+
+const formLogin = document.querySelector("#formLogin");
+
+btnLogin.addEventListener('click', event =>{
+    event.preventDefault();
+    if(email.value == "" || password.value == ""){
+        alert("Completa todos los campos");
+        return false
+    }
+    const form = new FormData(formLogin);
+    form.append("function", "login");
+    fetch("asset/data/Users.php", {
+        method: "POST",
+        body: form
+    })
+})
+
