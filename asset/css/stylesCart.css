@@ -114,7 +114,10 @@ header .container-icon {
 .cart-container {
   max-width: 900px;
   margin: 2rem auto;
+<<<<<<< HEAD
   margin-top: 120px;
+=======
+>>>>>>> 8e8f5a2d2dde4053f92a000b34da9170d082798f
   background-color: #ffffff;
   padding: 2rem;
   border-radius: 8px;
